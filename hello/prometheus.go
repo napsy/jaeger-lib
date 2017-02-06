@@ -1,12 +1,13 @@
 package metrics
 
 import (
-	stdprometheus "github.com/prometheus/client_golang/prometheus"
-	kitprometheus "github.com/go-kit/kit/metrics/prometheus"
 	kmetrics "github.com/go-kit/kit/metrics"
+	kitprometheus "github.com/go-kit/kit/metrics/prometheus"
+	stdprometheus "github.com/prometheus/client_golang/prometheus"
 )
 
-func fuck() {
+// Testfunc implements asdas
+func Testfunc() {
 	fieldKeys := []string{"method", "error"}
 	requestCount := kitprometheus.NewCounterFrom(stdprometheus.CounterOpts{}, fieldKeys)
 
